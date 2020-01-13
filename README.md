@@ -1,3 +1,3 @@
-#### zeronine
-#### semi project
-#### 190909
+#### zeronine / semi project / 190909
+#### 
+#### Start view - zeronineMainPage.jsp
