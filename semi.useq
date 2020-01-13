@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.3" icons="true" generate-combined-fragments="true">  
+  <object id="1" language="java" name="com.product.model.controller.myPageProductListServlet" project="semiProject" 
+    file="/semiProject/src/com/product/model/controller/myPageProductListServlet.java" binary="false" 
+    label="myPageProductListServlet" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="119" y="0"/>  
+  </object>
+</sequence-diagram>

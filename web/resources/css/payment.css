@@ -1,0 +1,110 @@
+
+        #li_test{
+            cursor: pointer; min-width: 80px;
+            line-height: 38px;
+            padding: 0 20px;
+            border: 1px solid #ddd;
+            border-bottom-color: #ddd;
+            background: #fff;
+            font-weight: 500;
+            text-align: center;
+            color: #666;
+            display: inline-block;
+            margin-right: -1px;
+            transition: all .3s ease-in;
+            -webkit-transition: all .3s ease-in;
+            float:left;
+
+        }
+
+        #paymentTitle{
+            width:1024px;
+            margin:0 auto;
+            text-align: center;
+            margin-top:20px;
+            font-size:17px;
+            color:black;
+        }
+
+        .form-input {
+            width: 100%;
+            height: 30px;
+            border: 1px solid #d3d3d3;
+            border-radius: 5px;
+            -moz-border-radius: 5px;
+            -webkit-border-radius: 5px;
+            -o-border-radius: 5px;
+            -ms-border-radius: 5px;
+            padding: 17px 20px;
+            box-sizing: border-box;
+            font-size: 14px;
+            color: #222; }
+
+       .space{
+        border-bottom: 10px solid #fff;
+       }
+       #bar2{
+           display: none;
+       }
+
+       #btn {
+        background: #51c3e6;
+        color: white;
+        border: none;
+        border: 2px solid white;
+        position: relative;
+        height: 40px;
+        font-size: 15px;
+        cursor: pointer;
+        transition: 800ms ease all;
+        outline: none;
+        width: 120px;
+        margin: 0px;
+
+    }
+    #btn:hover {
+        background: #2aadd4;
+
+    }
+
+       #detailBtn {
+        background: #51c3e6;
+        color: white;
+        border: none;
+        border: 2px solid white;
+        position: relative;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 800ms ease all;
+        outline: none;
+        width: 160px;
+        margin: 0px;
+
+    }
+
+    #detailBtn:hover {
+        background: #2aadd4;
+
+    }
+
+    #detailBtn2 {
+        background: #bebebe;
+        color: white;
+        border: none;
+        border: 2px solid white;
+        position: relative;
+        height: 50px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: 800ms ease all;
+        outline: none;
+        width: 160px;
+        margin: 0px;
+
+    }
+
+    #detailBtn2:hover {
+        background: #818181;
+
+    }

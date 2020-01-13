@@ -1,0 +1,36 @@
+.banner--clone {
+
+    /* Required styles */
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+  
+    /* Additional styles */
+    background: #ffffff;
+    border-bottom: 3px solid rgb(125, 151, 235);
+    /* Translate -100% to move off screen */
+    -webkit-transform: translateY(-100%);
+        -ms-transform: translateY(-100%);
+            transform: translateY(-100%);
+  
+    /* Animations */
+    -webkit-transition: all 300ms ease-in-out;
+       -moz-transition: all 300ms ease-in-out;
+            transition: all 300ms ease-in-out;
+  
+  }
+  
+  
+  
+  .banner--stick {
+  
+    /* Translate back to 0%; */
+    -webkit-transform: translateY(0%);
+        -ms-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  
+  
+  
+  

@@ -1,0 +1,60 @@
+body { font-family: tahoma; }
+
+ol,
+ul { list-style: outside none none; }
+
+
+#tags-field{
+	width:100px;
+}
+.tags {
+  background: none repeat scroll 0 0 #fff;
+  display: table;
+  padding: 0.5em;
+  width: 90%;
+  height: 120px;
+  margin: 0 auto;
+}
+
+.tags li.tagAdd,
+.tags li.addedTag {
+  float: left;
+  margin-left: 0.25em;
+  margin-right: 0.25em;
+}
+
+.tags li.addedTag {
+  background: none repeat scroll 0 0 rgb(157, 216, 243);
+  border-radius: 5px;
+  color: #fff;
+  padding: .6em;
+}
+
+.tags input,
+li.addedTag {
+  border: 1px solid transparent;
+  border-radius: 5px;
+  box-shadow: none;
+  display: block;
+  padding: 0.5em;
+}
+
+.tags input:hover { border: 1px solid #000; }
+
+span.tagRemove {
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 0.5em;
+}
+
+span.tagRemove:hover { color: #222222; }
+
+
+p { color: #ccc; }
+
+h1 {
+  color: #6b6b6b;
+  font-size: 1.5em;
+}
+
+

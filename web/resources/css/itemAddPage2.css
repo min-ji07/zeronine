@@ -1,0 +1,107 @@
+#item2BackGround{
+    background: #059ae2;
+}
+
+#item2Container{
+    width:1024px;
+    height:2100px;
+    margin:0 auto;
+    background: #059ae2;
+}
+
+
+
+#arrowDiv {
+	text-align: center;
+   display: inline-block;
+   margin-top:10px;
+   transition:500ms ease all;
+ }
+
+ #arrowA {
+    display: inline-block;
+    border-radius: 50%;
+    transition:500ms ease all;
+  }
+  
+  #arrowA:hover .left{
+    border: 0.3em solid #ffffff;
+    background:white;
+    transition:500ms ease all;
+  }
+  
+  #arrowA:hover .left:after {
+    border-top: 0.3em solid #86d6eb;
+    border-right: 0.3em solid #86d6eb;
+    background:white;
+    transition:500ms ease all;
+  }
+  
+
+
+ .left {
+    display: inline-block;
+    width: 3em;  /*4em*/
+    height: 3em; 
+    border: 0.3em solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin-right: 1.5em;
+    transition:500ms ease all;
+  }
+  
+  .left:after {
+    content: '';
+   display: inline-block;
+    margin-top: 0.6em;
+    margin-left: 0.4em;
+    width: 1.1em;
+    height: 1.1em;
+    
+    border-top: 0.3em solid rgb(255, 255, 255);
+    border-right: 0.3em solid rgb(255, 255, 255);
+    -moz-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+    transition:500ms ease all;
+  }
+
+  #listTitle{
+    margin: 0 auto;
+    text-align:center;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size:15px;
+    color:white;
+    font-family: 'Nanum Gothic', sans-serif;
+  
+  }
+
+  #itemAddTitle2{
+	font-size:28px;
+	color: rgb(255, 255, 255);
+	text-align:center;
+	padding-top:0px;
+}
+
+
+#itemAdd,#itemAdd1{
+	text-align:center;
+  margin:0 auto;
+  width:420px;
+  height:550px;
+  background:white;
+  padding-top:10px;
+  border-radius: 4px;
+}
+
+#sliderStyle{
+    width:600px;
+    height:180px;
+    margin-top:50px;
+}
+
+#addItemButton1{	
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 20px;
+}

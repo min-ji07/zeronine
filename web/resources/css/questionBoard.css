@@ -1,0 +1,513 @@
+@import 'https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap';
+    html  {
+		font-family: 'Nanum Gothic', sans-serif;
+		-ms-text-size-adjust: 100%; /* 2 */
+		-webkit-text-size-adjust: 100%; /* 2 */
+	}
+
+#FAQ1{
+    width:200px;
+    height:50%;
+    border-right: dashed 1px rgb(95, 199, 202);
+    border-bottom: dashed 1px rgb(95, 199, 202);
+    display: inline-block;
+    text-align : center;
+    cursor : pointer;
+    padding-top:25px;
+    font-size:14px;    
+}
+
+#FAQ1last{
+    width:205px;height:50%;border-bottom: dashed 1px rgb(95, 199, 202);display: inline-block;text-align : center;cursor : pointer;   padding-top:25px; font-size:14px;
+}
+
+#FAQ2{
+    width:200px;
+    height:50%;
+    border-right: dashed 1px rgb(95, 199, 202);
+    display: inline-block;
+    text-align : center;
+    cursor : pointer;    padding-top:25px; font-size:14px;
+   
+}
+
+#FAQ2last{
+    width:205px;height:50%;display: inline-block;text-align : center;cursor : pointer;    padding-top:25px; font-size:14px;
+}
+.popup{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    padding: 52px 60px 60px;
+    width: 820px;
+    height: 600px;
+    transform: translate(-50%,-50%);
+    border: 1px solid black;
+    box-sizing: border-box;
+    background: #fff;
+
+}
+.popup h3{
+    padding: 0 0 42px;
+    border-bottom: 3px solid #444;
+    font-weight: normal;
+    font-size: 28px;
+    color: #222;
+    text-align: center;
+    line-height:100%;
+}
+
+.popup .close{
+    position: absolute;
+    right:40px;
+    top:40px;
+    width: 41px;
+    height: 41px;
+    background: url("../images/btn-close.png") no-repeat;
+    color: transparent;  
+}
+.popup .con{
+    padding: 40px 78px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.dim1{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+/* table.type2 {
+    border-bottom: 1px solid #e8e8e8;
+} */
+table.type2 th,
+table.type2 td{
+    padding: 0 0 20px;
+} 
+
+table.type2 th {
+    padding-top: 15px;
+    font-size: 14px;
+    color:#222;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+}
+table.type2 th span{
+    color: #de4f41;
+} 
+/* table.type2 th em{
+    color: #999;
+} */
+/* table.type2 textarea{
+    height: 50px;
+} */
+/* table.type2 tr:last-child th,
+table.type2 tr:last-child td {
+    padding: 0 0 30px;
+} */
+
+/* 
+.txt_center{
+    text-align: center;
+    padding: 30px 0 0;
+} */
+
+.popup a {
+    color: grey;
+    text-decoration: none;
+}
+.popup:target{ 
+    display: block;
+}
+.popup:target+.dim{ 
+    opacity: 1;
+    z-index: 2;
+}
+.dim{
+    position: fixed;
+    left: 0;
+    top:0;
+    z-index: -1;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0, 0.6);
+    opacity: 0;
+
+}
+/*
+a:hover {
+    color: black;
+}
+*/
+ /* 아코디언메뉴 */
+ *{list-style:none;
+    padding:0; margin:0; 
+    color:black;
+    text-decoration:none;
+}
+.accordion {
+    margin-top:20px;
+    border:1px solid #ccc;
+}
+.accordion ul li:first-child{
+    border-top:none;
+}
+.accordion ul li{
+    border-top:1px solid #ccc;
+}
+.accordion ul li a {
+    display:block;
+    padding:10px;
+}
+.accordion .box {
+    padding:10px;
+    background:whitesmoke; width: 800px; height: 500px;
+    color:black;
+    display:none;
+}
+.accordion li.on .box {
+    display:block;
+}
+.lCsSupport
+{
+    margin				: 20px auto 0 auto;
+    width				: 878px;
+    padding				: 15px;
+    font-size			: 12px;
+    font-weight			: normal;
+    background-color	: #DDD;
+    letter-spacing		: normal;
+}
+.lCsSupportBtn
+{
+    margin-right		: 5px;
+    padding				: 5px;
+    border				: 1px solid #646464;
+    text-decoration		: none;
+    color				: #1B1B1B;
+    font-weight			: bold;
+    cursor				: pointer;
+}
+.lCsSupportBtn:hover
+{
+    text-decoration		: underline;
+}
+.lCsSupport b
+{
+    color				: #0F2C53;
+}
+
+/* 기본 설정*/
+a{text-decoration:none; color:#000000;}         
+               
+
+/* nav tag */
+navi {padding-top:10px;}                     /*  상단 여백 10px  */
+navi li {
+display:inline;                         /*  세로나열을 가로나열로 변경 */
+border-left:1px solid #999;             /* 각 메뉴의 왼쪽에 "|" 표시(분류 표시) */
+font:bold 12px Dotum;                     /* 폰트 설정 - 12px의 돋움체 굵은 글씨로 표시 */
+padding:0 10px;                         /* 각 메뉴 간격 */
+}
+navi li:first-child{border-left:none;}     /* 메뉴 분류중 제일 왼쪽의 "|"는 삭제 */
+
+
+
+
+/* 상담 스타일 */
+.popup2{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    padding: 52px 60px 60px;
+    width: 820px;
+    height: 550px;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgb(92, 220, 243);
+    box-sizing: border-box;
+    background: #fff;
+
+}
+
+.boardPopup{
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    padding: 52px 60px 60px;
+    width: 820px;
+    height: 550px;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgb(92, 220, 243);
+    box-sizing: border-box;
+    background: #fff;
+
+}
+.popup2 h2,.boardPopup h2{
+    padding: 0 0 42px;
+    border-bottom: 3px solid #444;
+    font-weight: normal;
+    font-size: 36px;
+    color: #222;
+    text-align: center;
+    line-height:100%;
+}
+
+.popup2 .close{
+    position: absolute;
+    right:40px;
+    top:40px;
+    width: 41px;
+    height: 41px;
+    background: url("../images/btn-close.png") no-repeat;
+    color: transparent;  
+}
+.popup2 .con,.boardPopup .con{
+    padding: 40px 78px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.agree {
+    position: relative;
+
+    padding: 0 30px;
+    height: 60px;
+    border: 1px solid  #e8e8e8;
+    line-height: 60px;
+}
+.agree label span{
+    color: #41acde;
+}
+.agree a.view{
+    position: absolute;
+    right: 30px;
+    top: 15px;
+    width: 93px;
+    height: 30px;
+    border: 1px solid  #ddd;
+    text-align: center;
+    line-height: 30px;
+}
+
+.dim2{
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    width:100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+
+table.type1 th,
+table.type1 td{
+    padding: 0 0 20px;
+} 
+
+table.type1 th {
+    padding-top: 15px;
+    font-size: 14px;
+    color:#222;
+    text-align: left;
+    font-weight: normal;
+    vertical-align: top;
+}
+table.type1 th span{
+    color: #41b2de;
+} 
+table.type1 th em{
+    color: #999;
+}
+table.type1 textarea{
+    height: 50px;
+}
+table.type1 tr:last-child th,
+table.type1 tr:last-child td {
+    padding: 0 0 30px;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    left: -3000%;
+}
+input[type="checkbox"]+ label{
+    font-size: 14px;
+    color: #666;
+}
+input[type="checkbox"]+ label:before{
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ddd;
+    margin:0 10px 0 0 ;
+    background: #f4f4f4;
+    vertical-align: middle;
+    box-sizing: border-box;
+    transition: all 0.3s;
+}
+input[type="checkbox"]:checked + label::before{
+    border:7px solid #666;
+}
+
+.txt_center{
+    text-align: center;
+    padding: 30px 0 0;
+}
+.btn_type1{
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    margin-left:20px;
+    background: #52c8d8;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+.btn_type2{
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    background: #cccccc;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+}
+.btn_type4{
+    display: inline-block;
+    width: 170px;
+    height: 50px;
+    background: #2f6db4;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    border-radius: 3px;
+    margin-left:20px;
+}
+ul{
+    list-style: none;
+}
+
+
+
+
+
+
+/** modal window styles **/
+#lean_overlay {
+    position: fixed;
+    z-index:100;
+    top: 0px;
+    left: 0px;
+    height:100%;
+    width:100%;
+    background: #000;
+    display: none;
+}
+
+
+#modal1,#modal2,#modal3,#modal4,#modal5,#modal6,#modal7,#modal8,#modal9,#modal10 {
+  width: 900px;height:400px;  /*팝업창의 크기조절*/
+  margin-top:100px;           /*팝업창 위아래 간격조절*/
+  padding: 18px;
+  text-align: center;
+  background: #f3f6fa;
+  -webkit-border-radius: 6px;
+  -moz-border-radius: 6px;
+  border-radius: 6px;
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.boardPopup1{
+    display: none;
+    display: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 100;
+    padding: 52px 60px 60px;
+    width: 820px;
+    height: 550px;
+    transform: translate(-50%,-50%);
+    border: 1px solid rgb(92, 220, 243);
+    box-sizing: border-box;
+    background: #fff;
+}
+
+#queBtn {
+    background: #0174DF;
+    color: white;
+    border: none;
+    border: 2px solid white;
+    position: relative;
+    height: 35px;
+    border-radius: 2px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    width: 80px;
+    margin: 0px;
+}
+
+#queBtn:hover {
+    background: #084B8A;
+}
+
+#questionBtn2 {
+    background: #51c3e6;
+    color: white;
+    border: none;
+    border: 2px solid white;
+    position: relative;
+    height:30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    width: 80px;
+    margin: 0px;
+}
+
+#questionBtn2:hover {
+    background: #084B8A;
+
+}
+
+#questionBtn3 {
+    background: #084B8A;
+    color: white;
+    border: none;
+    border: 2px solid white;
+    position: relative;
+    height:30px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 800ms ease all;
+    outline: none;
+    width: 80px;
+    margin: 0px;
+}
+
+#questionBtn3:hover {
+    background: #084B8A;
+
+}

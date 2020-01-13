@@ -1,0 +1,149 @@
+@charset "utf-8";
+
+
+@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+
+
+@import url(http://meyerweb.com/eric/tools/css/reset/reset.css);
+
+
+[class*="fontawesome-"]:before {
+  font-family: 'FontAwesome', sans-serif;
+}
+
+
+body{
+	height:900px;
+	background: url(../images/loginBackground.png);
+}
+
+#LoginContainer{
+	width:1024px;
+	height:800px;
+	margin:0 auto;
+}
+
+
+
+#LoginContainer1-1 {
+    margin: 0 auto;
+    width: 350px;
+	background-color: rgba(22, 22, 22, 0.9);
+    padding:20px;
+	border-radius: 10px;
+	font-family: 'Nanum Gothic', sans-serif;
+    
+}
+
+#LoginContainer1-1 form span {
+	background-color: #d3d3d3;
+	border-radius: 3px 0px 0px 3px;
+	-moz-border-radius: 3px 0px 0px 3px;
+	-webkit-border-radius: 3px 0px 0px 3px;
+	color: #606468;
+	display: block;
+	float: left;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+    width: 50px;
+    
+}
+
+#LoginContainer1-1 form input {
+	height: 50px;
+}
+
+#LoginContainer1-1 form input[type="text"], input[type="password"] {
+	background-color: #ffffff;
+	border-radius: 0px 3px 3px 0px;
+	-moz-border-radius: 0px 3px 3px 0px;
+	-webkit-border-radius: 0px 3px 3px 0px;
+	color: #606468;
+	margin-bottom: 1em;
+	padding: 0 16px;
+	width: 250px;
+}
+
+#LoginContainer1-1 form input[type="submit"] {
+
+	background: -moz-linear-gradient(to left, #74ebd5, #9face6);
+	background: -ms-linear-gradient(to left, #74ebd5, #9face6);
+	background: -o-linear-gradient(to left, #74ebd5, #9face6);
+	background: -webkit-linear-gradient(to left, #74ebd5, #9face6);
+	background: linear-gradient(to left, #74ebd5, #9face6);
+	color: #eee;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+    width: 305px;
+    margin:0 auto;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size:15px;
+}
+
+#LoginContainer1-1 form input[type="submit"]:hover {
+   
+
+    transition: all 0.5s ease-in-out;
+}
+
+#LoginContainer1-1 > p {
+	text-align: center;
+}
+
+
+#signUpLink {
+    margin-top:10px;
+	color: #eee;
+	text-decoration: none;
+}
+
+#signUpLink:hover {
+	text-decoration: underline;
+}
+
+input {
+	border: none;
+	font-family: 'Open Sans', Arial, sans-serif;
+	font-size: 14px;
+	line-height: 1.5em;
+	padding: 0;
+	-webkit-appearance: none;
+}
+
+
+
+.clearfix { 
+	*zoom: 1; 
+	text-align: center;
+	color:white;font-size:20px;
+} 
+.clearfix:before, .clearfix:after {
+	display: table;
+	content: "";
+}
+.clearfix:after { clear: both; }
+
+/* ---------- LOGIN ---------- */
+
+
+
+
+
+#kakao{
+	background-color: #f9bf14;
+	color: #eee;
+	font-weight: bold;
+	margin-bottom: 2em;
+	text-transform: uppercase;
+    width: 305px;
+    margin:0 auto;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size:15px;
+}
+
+
+

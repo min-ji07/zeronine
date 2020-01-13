@@ -1,0 +1,335 @@
+.box {
+	width: 200px;
+	height: 350px;
+	position: relative;
+	display: inline-block;
+	margin: 0 2px;
+	cursor: pointer;
+	color: #707a85;
+	-webkit-transition: background 0.4s 0.5s;
+	transition: background 0.4s 0.5s;
+	margin-bottom: 20px;
+}
+
+#categoryName{
+	overflow: hidden;
+   display: inline-block;
+}
+#categoryName img{
+	max-width: 98%;
+	height: auto;
+	margin: 0 auto;
+	margin-top:3px; 
+	transition: all 0.2s;
+    display: block;
+	transform: scale(1);
+	
+	
+}
+
+
+
+#categoryName:hover img {
+	transform: scale(1.05);
+	-o-transform:scale(1.05); 
+	-moz-transform:scale(1.05);
+	-webkit-transform:scale(1.05);
+	overflow: hidden;
+}
+
+
+#spanItem{	
+	font-weight: 900;
+	font-size: 14px;
+	margin-left:-10px;
+}
+
+#spanPrice{
+
+	margin-left: 0px;
+	font-weight: 900;
+	font-size: 16px;
+	color: rgb(199, 10, 10);
+	display: inline;
+}
+#spanPriceWon{
+	text-align: left;
+	color: rgb(199, 10, 10);
+	margin-left: -5px;
+	display: inline;
+}
+
+.box:hover {
+	background: rgba(255,255,255,0);
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.box h3 {
+	font-family: "Ruthie", cursive;
+	font-size: 180px;
+	line-height: 370px;
+	margin: 0;
+	font-weight: 400;
+	width: 100%;
+}
+
+.box span {
+	display: block;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	
+}
+.box div {
+	display: block;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 13px;
+	padding: 5px;
+}
+.box h3,
+.box span {
+	-webkit-transition: color 0.4s 0.5s;
+	transition: color 0.4s 0.5s;
+}
+.box div {
+	-webkit-transition: color 0.4s 0.5s;
+	transition: color 0.4s 0.5s;
+}
+.box:hover h3,
+.box:hover span {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+.box:hover div {
+	-webkit-transition-delay: 0s;
+	transition-delay: 0s;
+}
+
+.box svg {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.box svg line {
+	stroke-width: 2;
+	stroke: #ecf0f1;
+	fill: none;
+	-webkit-transition: all .8s ease-in-out;
+	transition: all .8s ease-in-out;
+}
+
+.box:hover svg line {
+	-webkit-transition-delay: 0.1s;
+	transition-delay: 0.1s;
+}
+
+.box svg line.top,
+.box svg line.bottom {
+	stroke-dasharray: 330 240; 
+}
+
+.box svg line.left,
+.box svg line.right {
+	stroke-dasharray: 490 400;
+}
+
+.box:hover svg line.top {
+	-webkit-transform: translateX(-600px);
+	transform: translateX(-600px);
+}
+
+.box:hover svg line.bottom {
+	-webkit-transform: translateX(600px);
+	transform: translateX(600px);
+}
+
+.box:hover svg line.left {
+	-webkit-transform: translateY(920px);
+	transform: translateY(920px);
+}
+
+.box:hover svg line.right {
+	-webkit-transform: translateY(-920px);
+	transform: translateY(-920px);
+}
+
+.demo-2{
+	padding: 3em 2em;
+	padding-top:15px;
+	text-align: center;
+}
+
+#likeView{
+	border-top: 1px solid rgb(219, 219, 219);
+	text-align: left;
+
+
+}
+
+.demo-2 .box:hover h3,
+.demo-2 .box:hover #spanItem {
+	color: #f1815f;
+}
+
+
+.demo-2 .box:hover #likeView i{
+	
+}
+.demo-2 .box svg line {
+	stroke-width: 2;
+}
+
+.demo-2 .box:hover svg line {
+	stroke-width: 5;
+	stroke: #ee6262;
+}
+
+.codrops-header {
+	margin: 0 auto;
+	padding: 2em;
+	text-align: center;
+}
+
+.codrops-header h1 {
+	margin: 0;
+	font-weight: 300;
+	font-size: 2.5em;
+}
+
+.codrops-header h1 span {
+	display: block;
+	padding: 0 0 0.6em 0.1em;
+	font-size: 0.6em;
+	opacity: 0.7;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	width: 100%;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 0.69em;
+	line-height: 2.2;
+}
+
+.codrops-top a {
+	display: inline-block;
+	padding: 0 1em;
+	text-decoration: none;
+	letter-spacing: 1px;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	display: block;
+	float: left;
+}
+
+.codrops-icon:before {
+	margin: 0 4px;
+	text-transform: none;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	font-family: 'codropsicons';
+	line-height: 1;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+ul#cateOrderList li:before{
+	content: "> ";
+}
+
+.cateOrder{
+	display: inline;
+	padding: 5px;
+	margin: 1px;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+#categoryid1{
+	text-align: left;
+	height:180px;
+}
+
+#ct1-1{
+	display: inline-block;
+	color: rgb(199, 10, 10);
+	font-weight:bold;
+	font-size:20px;
+
+}
+
+#ctPriceWon{
+	display: inline-block;
+	color: rgb(199, 10, 10);
+	font-size: 13px;
+}
+
+
+#ct1-2{
+	font-weight:none;
+	display: inline-block;
+	margin-left:53px;
+
+}
+
+#ct2-1{
+	color:black;
+	font-size:14px;
+}
+
+#ct3-1,#ct3-2,#ct3-3{
+	display: inline-block;
+	text-decoration : none;
+	border-bottom : 1px solid rgb(187, 187, 187);
+	font-size:13px;
+	margin-top:5px;
+}
+
+#ct4-1{
+	margin-top:5px;
+}
+
+#dt3-1,#dt3-2,#dt3-3{
+	display: inline-block;
+	text-decoration : none;
+	border-bottom : 1px solid rgb(187, 187, 187);
+	font-size:14px;
+	margin-top:5px;
+	padding: 2px;
+	margin-bottom: 5px;
+}
+
+#mainImageDiv img{
+position: absolute; top:0; left: 0;
+width: 100%;
+height: 100%;
+}

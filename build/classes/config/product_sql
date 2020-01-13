@@ -1,0 +1,23 @@
+# 상품등록용 TABLE
+CREATE TABLE USER_PRODUCT(
+    PNO NUMBER(10) PRIMARY KEY, /* 상품 번호 */
+    MAINIMAGE VARCHAR(50) NOT NULL, /* 메인 이미지 / 파일 */
+    MAINTITLE VARCHAR(50) NOT NULL, /* 상품명 */
+    MAINPRICE NUMBER(20) NOT NULL, /* 판매가 */
+    OP1_TITLE VARCHAR(50), /* 옵션상품명1 */
+    OP1_PRICE NUMBER(20), /* 옵션가1 */
+    OP2_TITLE VARCHAR(50), /* 옵션상품명2 */
+    OP2_PRICE NUMBER(20), /* 옵션가2 */
+    OP3_TITLE VARCHAR(50), /* 옵션상품명3 */
+    OP3_PRICE NUMBER(20), /* 옵션가3 */
+    RADIO VARCHAR(10) NOT NULL, /* code1 = 의류 / code2 =  */
+    DV_PRICE NUMBER(10) NOT NULL, /* 배송비 */
+    DV_DUE NUMBER(10) NOT NULL, /* 배송기간 */
+    MIN_PERSON NUMBER(10) NOT NULL, /* 최소구매인원 */
+    MIN_COUNT NUMBER(10) NOT NULL, /* 최소구매수량 */
+    HASHTAG VARCHAR(50), /* 해시태그 */
+    DETAILIMAGE VARCHAR(50) NOT NULL /* 상세이미지 */
+);
+
+# 상품번호 증가용 SEQUENCE
+CREATE SEQUENCE ITEM_SEQ START WITH 1 INCREMENT BY 1;
